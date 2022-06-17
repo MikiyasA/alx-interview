@@ -7,13 +7,13 @@ def pascal_triangle(n):
     representing the Pascal's triangle of n
     """
     aList = []
-    if n <= 0:    
+    if n <= 0:
         return aList
-    
+
     aList = [[1]]
-    if n == 1:    
+    if n == 1:
         return aList
-    
+
     for row in range(1, n):
         left = -1
         right = 0
