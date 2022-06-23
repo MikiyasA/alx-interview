@@ -6,7 +6,6 @@ and each box may contain keys to the other boxes.
 """
 
 
-
 def canUnlockAll(boxes):
     """ method that determines if all the boxes can be opened. """
     n = len(boxes)
