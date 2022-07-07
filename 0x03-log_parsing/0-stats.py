@@ -2,10 +2,8 @@
 """ script that reads stdin line by line and computes metrics """
 
 if __name__ == '__main__':
-    
 
     import sys
-
 
     def print_results(statusCodes, fileSize):
         """ Print statistics """
@@ -38,7 +36,7 @@ if __name__ == '__main__':
                 if statusCode in statusCodes:
                     statusCodes[statusCode] += 1
                 fileSize += int(data[-1])
-            except:
+            except Exception:
                 pass
         print_results(statusCodes, fileSize)
     except KeyboardInterrupt:
